@@ -32,6 +32,14 @@ body {
   }
 
   .groupPage {
-    @apply flex flex-col justify-center items-center;
+    @apply flex flex-col justify-center items-center pt-20 pb-10 gap-5 overflow-y-scroll w-screen h-screen;
+  }
+
+  .groupTitle {
+    @apply text-2xl font-bold flex justify-center items-center;
+  }
+
+  .groupList {
+    @apply flex flex-col justify-center items-center pt-20 pb-10 gap-5 overflow-y-scroll w-screen h-screen;
   }
 }
