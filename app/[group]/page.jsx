@@ -1,6 +1,7 @@
 import React from "react";
 
-const GroupPage = () => {
+const GroupPage = ({ params }) => {
+  console.log(params);
   return <div></div>;
 };
 
