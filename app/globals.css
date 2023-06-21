@@ -27,5 +27,11 @@ body {
 }
 
 @layer components {
-  
+  .listItem {
+    @apply flex justify-center items-center border-white border rounded-md w-2/3 pt-4 pb-4;
+  }
+
+  .groupPage {
+    @apply flex flex-col justify-center items-center;
+  }
 }

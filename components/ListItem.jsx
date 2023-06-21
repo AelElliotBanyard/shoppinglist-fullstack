@@ -1,18 +1,20 @@
 import Link from 'next/link';
 
-const listItem = ({
+const ListItem = ({
     id,
     group_id,
     title,
+    completed
 }
 ) => {
     return (
-        <div>
-            <Link href={`/${group_id}/item/${id}`}>{title}</Link>
-            <h1>{title}</h1>
+        <>
+            <Link className='listItem' href={`/${group_id}/item/${id}`}>
+                {title}
+            </Link>
             
-        </div>
+        </>
     );
 };
 
-export default listItem;
+export default ListItem;
