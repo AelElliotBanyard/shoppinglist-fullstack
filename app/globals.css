@@ -27,6 +27,7 @@ body {
 }
 
 @layer components {
+  
   .listItem {
     @apply flex justify-center items-center border-white border rounded-md w-2/3 pt-4 pb-4;
   }
@@ -36,10 +37,6 @@ body {
   }
 
   .landingPage {
-    @apply flex flex-col justify-center items-center gap-5 w-screen h-screen text-white;
-  }
-
-  .createGroup {
-    @apply flex 
+    @apply flex flex-col justify-center items-center gap-5 w-screen h-screen text-white text-3xl font-bold;
   }
 }
