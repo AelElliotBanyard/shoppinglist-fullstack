@@ -4,8 +4,8 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -33,5 +33,13 @@ body {
 
   .groupPage {
     @apply flex flex-col justify-center items-center;
+  }
+
+  .landingPage {
+    @apply flex flex-col justify-center items-center gap-5 w-screen h-screen text-white;
+  }
+
+  .createGroup {
+    @apply flex 
   }
 }
