@@ -4,8 +4,8 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -27,6 +27,7 @@ body {
 }
 
 @layer components {
+  
   .listItem {
     @apply flex justify-center items-center border-white border rounded-md w-2/3 pt-4 pb-4;
   }
@@ -35,6 +36,12 @@ body {
     @apply flex flex-col justify-center items-center gap-5 w-full h-screen overflow-x-hidden overflow-y-hidden;
   }
 
+  .landingPage {
+    @apply flex flex-col justify-center items-center gap-8 w-screen h-screen text-white text-xl font-bold ;
+  }
+  .CJGroup{
+    @apply border-white border flex justify-center items-center rounded-md p-7 w-3/5
+  }
   .groupTitle {
     @apply text-2xl font-bold flex justify-center pt-20 items-center;
   }
