@@ -7,14 +7,6 @@ const GroupPage = ({ params }) => {
       <h1 className="groupTitle">title</h1>
       <div className="groupList">
         <ListItem id="13413" group_id={params.group} title="bananas" />
-        <ListItem id="13413" group_id={params.group} title="bananas" />
-        <ListItem id="13413" group_id={params.group} title="bananas" />
-        <ListItem id="13413" group_id={params.group} title="bananas" />
-        <ListItem id="13413" group_id={params.group} title="bananas" />
-        <ListItem id="13413" group_id={params.group} title="bananas" />
-        <ListItem id="13413" group_id={params.group} title="bananas" />
-        <ListItem id="13413" group_id={params.group} title="bananas" />
-        <ListItem id="13413" group_id={params.group} title="bananas" />
       </div>
     </div>
   );
