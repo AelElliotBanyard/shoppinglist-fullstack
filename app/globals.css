@@ -25,3 +25,21 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+@layer components {
+  .listItem {
+    @apply flex justify-center items-center border-white border rounded-md w-2/3 pt-4 pb-4;
+  }
+
+  .groupPage {
+    @apply flex flex-col justify-center items-center gap-5 w-full h-screen overflow-x-hidden overflow-y-hidden;
+  }
+
+  .groupTitle {
+    @apply text-2xl font-bold flex justify-center pt-20 items-center;
+  }
+
+  .groupList {
+    @apply flex flex-col justify-center items-center pt-20 pb-10 gap-5 overflow-y-scroll w-screen h-screen;
+  }
+}
