@@ -5,8 +5,8 @@ export default function Home({ params }) {
     <main>
       <h1 className="">Choose one of the following Options</h1>
       <div className="landingPage">
-        <Link className="createGroup" href="/create">Create Group</Link>
-        <Link className="joinGroup" href="/join">Join Group</Link>
+        <Link className="CJGroup" href="/create">Create Group</Link>
+        <Link className="CJGroup" href="/join">Join Group</Link>
         </div>
     </main>
   )

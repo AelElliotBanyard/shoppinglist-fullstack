@@ -37,6 +37,9 @@ body {
   }
 
   .landingPage {
-    @apply flex flex-col justify-center items-center gap-5 w-screen h-screen text-white text-3xl font-bold;
+    @apply flex flex-col justify-center items-center gap-8 w-screen h-screen text-white text-xl font-bold ;
+  }
+  .CJGroup{
+    @apply border-white border flex justify-center items-center rounded-md p-7 w-3/5
   }
 }
