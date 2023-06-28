@@ -1,9 +1,16 @@
 import React from "react";
-import ListItem from "../../components/ListItem";
 import { FaCog, FaPlus } from 'react-icons/fa'
 import Link from 'next/link';
+import { getGroup } from "@/lib/databaseGroup";
+import List from "@/components/List";
 
-const GroupPage = ({ params }) => {
+async function getGroupData(group_id) {
+  const res = await getGroup(group_id);
+  return JSON.parse(JSON.stringify(res));
+}
+
+const GroupPage = async ({ params }) => {
+  const group = await getGroupData(params.group);
   return (
     <div className="groupPage">
       <div className="groupHeader">
@@ -12,7 +19,7 @@ const GroupPage = ({ params }) => {
         <Link href={`/${params.group}/settings`} className="groupSettings"><FaCog size={24} /></Link>
       </div>
       <div className="groupList">
-        <ListItem id="13413" group_id={params.group} title="bananas" />
+        <List items={group.items} />
       </div>
     </div>
   );
