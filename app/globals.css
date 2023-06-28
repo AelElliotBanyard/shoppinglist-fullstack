@@ -54,4 +54,7 @@ body {
   .addItem{
     @apply pl-11 pt-12
   }
+  .dltBtn{
+    @apply p-2
+  }
 }

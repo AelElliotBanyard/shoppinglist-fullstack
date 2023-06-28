@@ -4,6 +4,7 @@ import { FaCog, FaPlus } from 'react-icons/fa'
 import Link from 'next/link';
 
 const GroupPage = ({ params }) => {
+  
   return (
     <div className="groupPage">
       <div className="groupHeader">
