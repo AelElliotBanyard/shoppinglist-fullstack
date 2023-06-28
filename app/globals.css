@@ -36,10 +36,22 @@ body {
   }
 
   .groupTitle {
-    @apply text-2xl font-bold flex justify-center pt-20 items-center;
+    @apply text-2xl font-bold flex justify-center pt-12 items-center;
   }
 
   .groupList {
     @apply flex flex-col justify-center items-center pt-20 pb-10 gap-5 overflow-y-scroll w-screen h-screen;
+  }
+
+  .groupHeader {
+    @apply flex w-full justify-between ;
+  }
+
+  .groupSettings{
+    @apply pr-11 pt-12
+  }
+
+  .addItem{
+    @apply pl-11 pt-12
   }
 }
