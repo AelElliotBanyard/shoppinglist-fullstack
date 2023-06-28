@@ -33,7 +33,7 @@ body {
   }
 
   .groupPage {
-    @apply flex flex-col justify-center items-center;
+    @apply flex flex-col justify-center items-center gap-5 w-full h-screen overflow-x-hidden overflow-y-hidden;
   }
 
   .landingPage {
@@ -41,5 +41,12 @@ body {
   }
   .CJGroup{
     @apply border-white border flex justify-center items-center rounded-md p-7 w-3/5
+  }
+  .groupTitle {
+    @apply text-2xl font-bold flex justify-center pt-20 items-center;
+  }
+
+  .groupList {
+    @apply flex flex-col justify-center items-center pt-20 pb-10 gap-5 overflow-y-scroll w-screen h-screen;
   }
 }
