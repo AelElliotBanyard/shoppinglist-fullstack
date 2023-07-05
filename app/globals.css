@@ -72,7 +72,7 @@ body {
   }
 
   .newUserContainer {
-    @apply border border-white rounded p-8 mt-5 mb-5;
+    @apply border border-white rounded p-8 mt-5 mb-5 flex justify-center items-center flex-col;
   }
 
   .create > .inputName {
@@ -121,5 +121,9 @@ body {
 
   .choiceText {
     @apply font-bold
+  }
+
+  .backLanding {
+    @apply absolute top-0 left-0 p-2;
   }
 }

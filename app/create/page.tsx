@@ -4,6 +4,8 @@ import { useState } from "react";
 import { createGroup } from "../../lib/databaseGroup";
 import { useRouter } from "next/navigation";
 import { AiFillDelete } from "react-icons/ai";
+import { IoIosArrowBack } from "react-icons/io";
+import Router from "next/navigation";
 
 const Create = () => {
   const [name, setName] = useState("");
@@ -31,6 +33,7 @@ const Create = () => {
 
   return (
     <div className="create">
+      <button className="backLanding"><IoIosArrowBack size={32}/></button>
       <h1>Create</h1>
       <div className="inputName">
         <label htmlFor="name">Name</label>
