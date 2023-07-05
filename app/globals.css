@@ -43,24 +43,24 @@ body {
     @apply flex flex-col justify-center items-center pt-20 pb-10 gap-5 overflow-y-scroll w-screen h-screen;
   }
 
-  .itemTitle {
-    @apply text-2xl font-bold flex justify-center pt-20 items-center;
+  .itemPage {
+    @apply flex flex-col justify-center items-center gap-5 w-full;
   }
 
   .itemPageValue {
-    @apply flex justify-center gap-60 mt-20;
+    @apply w-2/3 flex flex-col justify-center gap-5;
+  }
+
+  .itemTitle {
+    @apply text-2xl font-bold flex justify-center pt-20;
   }
 
   .descriptionInput {
-    @apply border-white border rounded bg-transparent p-2;
+    @apply border-white border rounded bg-transparent p-2 mb-10;
   }
 
   .itemSubtitle {
     @apply font-bold text-2xl;
-  }
-
-  .rightSideItem {
-    @apply flex flex-col justify-center gap-5;
   }
 
   .deleteItem {
