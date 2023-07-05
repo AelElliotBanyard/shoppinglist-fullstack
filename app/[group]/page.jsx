@@ -20,7 +20,7 @@ const GroupPage = async ({ params }) => {
         <Link href={`/${params.group}/settings`} className="groupSettings"><FaCog size={24} /></Link>
       </div>
       <div className="groupList">
-        <List items={group.items} />
+        <List items={group.items} ><input type="checkbox"/></List>
       </div>
     </div>
   );
