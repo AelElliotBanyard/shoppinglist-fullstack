@@ -64,11 +64,15 @@ body {
   }
 
   .create > h2 {
-    @apply text-xl font-bold;
+    @apply text-xl font-bold pt-10;
   }
 
   .create > .input {
     @apply flex flex-row justify-center gap-2;
+  }
+
+  .newUserContainer {
+    @apply border border-white rounded p-8 mt-5 mb-5;
   }
 
   .create > .inputName {
@@ -79,11 +83,23 @@ body {
     @apply border-white border rounded-md p-2 bg-black;
   }
 
-  .create > .input > .inputl {
-    @apply flex flex-col justify-center gap-2;
+  .create > .input > .inputl > input {
+    @apply border-white border rounded-md p-2 bg-black;
   }
 
-  .create > .input > .inputl > input {
+  .newUser {
+    @apply flex justify-center items-center rounded-md p-2 bg-blue-300;
+  }
+
+  .deleteUser {
+    @apply flex items-center justify-center rounded-md p-2 h-full bg-red-600;
+  }
+
+  .createGroup {
+    @apply flex items-center justify-center rounded-md p-5 bg-blue-300 mt-10;
+  }
+
+  .inputUser {
     @apply border-white border rounded-md p-2 bg-black;
   }
 

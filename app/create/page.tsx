@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { createGroup } from "../../lib/databaseGroup";
 import { useRouter } from "next/navigation";
+import { AiFillDelete } from "react-icons/ai";
 
 const Create = () => {
   const [name, setName] = useState("");
@@ -40,45 +41,57 @@ const Create = () => {
           onChange={(e) => setName(e.target.value)}
         />
       </div>
-      <h2>Benutzer</h2>
-      <button
-        onClick={(e) => {
-          e.preventDefault();
-          setAmountUsers(amountUsers + 1);
-          setUsers([...users, ""]);
-        }}
-      >
-        new User
-      </button>
-      {[...Array(amountUsers)].map((_, i) => (
-        <div className="input" key={i}>
-          <div className="inputl">
-            <label htmlFor={`user-${i}`}>Name</label>
-            <input
-              type="text"
-              id={`user-${i}`}
-              value={users[i]}
-              onChange={(e) => {
-                const newUsers = [...users];
-                newUsers[i] = e.target.value;
-                setUsers(newUsers);
-              }}
-            />
+      <div className="newUserContainer">
+        <button
+          className="newUser"
+          onClick={(e) => {
+            e.preventDefault();
+            setAmountUsers(amountUsers + 1);
+            setUsers([...users, ""]);
+          }}
+        >
+          new User
+        </button>
+        {[...Array(amountUsers)].map((_, i) => (
+          <div className="input" key={i}>
+            <div className="inputl">
+              <label htmlFor={`user-${i}`}>Name</label>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  gap: "8px",
+                }}
+              >
+                <input
+                  type="text"
+                  className="inputUser"
+                  id={`user-${i}`}
+                  value={users[i]}
+                  onChange={(e) => {
+                    const newUsers = [...users];
+                    newUsers[i] = e.target.value;
+                    setUsers(newUsers);
+                  }}
+                />
+              <button
+                className="deleteUser"
+                onClick={(e) => {
+                  e.preventDefault();
+                  let usersCopy = [...users];
+                  usersCopy.splice(i, 1);
+                  setUsers(usersCopy);
+                  setAmountUsers(amountUsers - 1);
+                }}
+              >
+                <AiFillDelete size={25} />
+              </button>
+              </div>
+            </div>
           </div>
-          <button
-            onClick={(e) => {
-              e.preventDefault();
-              let usersCopy = [...users];
-              usersCopy.splice(i, 1);
-              setUsers(usersCopy);
-              setAmountUsers(amountUsers - 1);
-            }}
-          >
-            Del
-          </button>
-        </div>
       ))}
-      <button onClick={newGroup}>Create Group</button>
+      </div>
+      <button className="createGroup" onClick={newGroup}>Create Group</button>
     </div>
   );
 };
