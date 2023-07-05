@@ -10,25 +10,21 @@ const getItemData = async (id) => {
 
 const ItemPage = async ({ params }) => {
   const { id } = params;
-  let data = {};
+  const data = await getItemData(id);
   let description = data.description;
   const changeDescription = (e) => {
     description = e.target.value;
   };
   const router = useRouter();
 
-  useEffect(() => {
-    const fetchData = async () => {
-      data = await getItemData(id);
-    };
-    fetchData();
-  }, []);
-
   return (
     <div className="itemPage">
-      <h1 className="itemTitle">
-        {data.title} {data.completed}
-      </h1>
+      <div className="itemPageTitle">
+        <h1 className="itemTitle">
+          {data.title} {data.completed}
+        </h1>
+        <input type="checkbox" className="checkbox"/>
+      </div>
       <div className="itemPageValue">
         <div className="itemDescription">
           <h2 className="itemSubtitle">Description</h2>

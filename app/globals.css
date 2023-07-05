@@ -66,4 +66,8 @@ body {
   .deleteItem {
     @apply mt-10 rounded bg-red-600 text-white p-2 font-bold;
   }
+  
+  .checkbox {
+    @apply w-10;
+  }
 }
