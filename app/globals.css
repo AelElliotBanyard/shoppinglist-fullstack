@@ -34,7 +34,9 @@ body {
   .groupPage {
     @apply flex flex-col justify-center items-center gap-5 w-full h-screen overflow-x-hidden overflow-y-hidden;
   }
-
+  .groupPage > .title {
+    @apply flex flex-col gap-2;
+  }
   .landingPage {
     @apply flex flex-col justify-center items-center gap-8 w-screen h-screen text-white text-xl font-bold;
   }
@@ -42,13 +44,96 @@ body {
     @apply border-white border flex justify-center items-center rounded-md p-7 w-3/5;
   }
   .groupTitle {
-    @apply text-2xl font-bold flex justify-center pt-20 items-center;
+    @apply text-2xl font-bold flex justify-center pt-12 items-center mr-16;
   }
 
   .groupList {
     @apply flex flex-col justify-center items-center pt-20 pb-10 gap-5 overflow-y-scroll w-screen h-screen;
   }
+  .groupHeader {
+    @apply flex w-full justify-between;
+  }
 
+  .groupSettings {
+    @apply pr-11 pt-12;
+  }
+
+  .addItem {
+    @apply pl-11 pt-12 mr-20;
+  }
+
+  .settingsPage {
+    @apply flex flex-col justify-center items-center pt-10;
+  }
+
+  .dltBtn {
+    @apply border-white border-2 flex justify-center items-center rounded-md p-7 w-3/5 mt-8;
+  }
+
+  .settingsTitle {
+    @apply font-bold text-3xl bg-transparent text-center;
+  }
+
+  .addBtn {
+    @apply border-white border-2 flex justify-center items-center rounded-md p-7 w-3/5 mt-10 ml-20;
+  }
+
+  .addInput {
+    @apply border-white border-2 bg-black text-white text-center flex pt-2 pb-2 mt-10 ml-16 mt-28 text-lg;
+  }
+  .itemTitle {
+    @apply text-2xl font-bold flex justify-center pt-12 items-center;
+  }
+
+  .addBtn {
+    @apply border-white border-2 flex justify-center items-center rounded-md p-7 w-3/5 mt-10 ml-20;
+  }
+
+  .addInput {
+    @apply border-white border-2 bg-black text-white text-center flex pt-3 pb-3 mt-56 ml-6 text-2xl;
+    border-color: white !important;
+  }
+
+  .addDescription {
+    @apply border-white border-2 bg-black text-white text-center flex pt-2 pb-2 mt-10 ml-16 text-lg;
+    border-color: white !important;
+  }
+
+  .settingsTitle {
+    @apply text-2xl font-bold flex justify-center items-center;
+  }
+
+  .back {
+    @apply ml-20 mt-2;
+  }
+
+  .settingsHeader {
+    @apply flex w-full justify-between;
+  }
+
+  .settingsTitle {
+    @apply mr-10 ml-10;
+  }
+
+  .addHeader {
+    @apply flex w-full justify-between;
+  }
+
+  .itemTitle {
+    @apply text-2xl font-bold flex justify-center pt-12 items-center;
+  }
+
+  .addTitle {
+    @apply text-2xl font-bold mt-10 mr-32;
+  }
+
+  .backBtn {
+    @apply ml-20 mt-11;
+  }
+
+  .homeBtn {
+    @apply mr-32 mt-2;
+  }
   .create {
     @apply flex flex-col justify-center items-center gap-2 w-screen h-screen;
   }
