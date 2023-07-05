@@ -4,8 +4,8 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -34,11 +34,15 @@ body {
   .groupPage {
     @apply flex flex-col justify-center items-center gap-5 w-full h-screen overflow-x-hidden overflow-y-hidden;
   }
-
   .groupPage > .title {
     @apply flex flex-col gap-2;
   }
-
+  .landingPage {
+    @apply flex flex-col justify-center items-center gap-8 w-screen h-screen text-white text-xl font-bold;
+  }
+  .CJGroup {
+    @apply border-white border flex justify-center items-center rounded-md p-7 w-3/5;
+  }
   .groupTitle {
     @apply text-2xl font-bold flex justify-center pt-12 items-center mr-16;
   }
@@ -46,7 +50,6 @@ body {
   .groupList {
     @apply flex flex-col justify-center items-center pt-20 pb-10 gap-5 overflow-y-scroll w-screen h-screen;
   }
-
   .groupHeader {
     @apply flex w-full justify-between;
   }
@@ -130,5 +133,52 @@ body {
 
   .homeBtn {
     @apply mr-32 mt-2;
+  }
+  .create {
+    @apply flex flex-col justify-center items-center gap-2 w-screen h-screen;
+  }
+
+  .create > h1 {
+    @apply text-3xl font-bold;
+  }
+
+  .create > h2 {
+    @apply text-xl font-bold;
+  }
+
+  .create > .input {
+    @apply flex flex-row justify-center gap-2;
+  }
+
+  .create > .inputName {
+    @apply flex flex-col justify-center gap-2;
+  }
+
+  .create > .inputName > input {
+    @apply border-white border rounded-md p-2 bg-black;
+  }
+
+  .create > .input > .inputl {
+    @apply flex flex-col justify-center gap-2;
+  }
+
+  .create > .input > .inputl > input {
+    @apply border-white border rounded-md p-2 bg-black;
+  }
+
+  .join {
+    @apply flex flex-col justify-center items-center gap-2 w-screen h-screen;
+  }
+
+  .join > h1 {
+    @apply text-3xl font-bold;
+  }
+
+  .join > input {
+    @apply border-white border rounded-md p-2 bg-black;
+  }
+
+  .join > button {
+    @apply border-white border rounded-md py-2 px-4 bg-black;
   }
 }
