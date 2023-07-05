@@ -115,7 +115,7 @@ body {
     @apply border-white border rounded-md p-2 bg-black;
   }
 
-  .join > button {
+  .joinButton {
     @apply flex items-center justify-center rounded-md p-5 pr-10 pl-10 bg-blue-300 mt-10 font-bold;
   }
 
