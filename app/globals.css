@@ -116,7 +116,7 @@ body {
   }
 
   .join > button {
-    @apply border-white border rounded-md py-2 px-4 bg-black;
+    @apply flex items-center justify-center rounded-md p-5 pr-10 pl-10 bg-blue-300 mt-10 font-bold;
   }
 
   .choiceText {
