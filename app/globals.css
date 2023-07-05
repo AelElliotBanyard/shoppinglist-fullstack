@@ -36,11 +36,17 @@ body {
   }
 
   .landingPage {
-    @apply flex flex-col justify-center items-center gap-8 w-screen h-screen text-white text-xl font-bold;
+    @apply flex flex-col justify-center items-center gap-8 w-screen h-screen text-white text-2xl font-bold text-center;
   }
+
+  .landingPageOptions{
+    @apply flex flex-col gap-5 w-full items-center justify-center;
+  }
+
   .CJGroup {
-    @apply border-white border flex justify-center items-center rounded-md p-7 w-3/5;
+    @apply flex justify-center items-center rounded-md p-7 w-3/5 bg-blue-300;
   }
+
   .groupTitle {
     @apply text-2xl font-bold flex justify-center pt-20 items-center;
   }
@@ -95,5 +101,9 @@ body {
 
   .join > button {
     @apply border-white border rounded-md py-2 px-4 bg-black;
+  }
+
+  .choiceText {
+    @apply font-bold
   }
 }
