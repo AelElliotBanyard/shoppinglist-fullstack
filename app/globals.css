@@ -44,17 +44,39 @@ body {
   }
 
   .groupHeader {
-    @apply flex w-full justify-between ;
+    @apply flex w-full justify-between;
   }
 
-  .groupSettings{
-    @apply pr-11 pt-12
+  .groupSettings {
+    @apply pr-11 pt-12;
   }
 
-  .addItem{
-    @apply pl-11 pt-12
+  .addItem {
+    @apply pl-11 pt-12;
   }
-  .dltBtn{
-    @apply p-2
+
+  .settingsPage {
+    @apply flex flex-col justify-center items-center pt-10;
+  }
+
+  .dltBtn {
+    @apply border-white border-2 flex justify-center items-center rounded-md p-7 w-3/5;
+  }
+
+  .settingsTitle {
+    @apply font-bold text-3xl bg-transparent text-center;
+  }
+
+  .itemTitle {
+    @apply text-2xl font-bold flex justify-center pt-12 items-center;
+  }
+
+  .addBtn{
+    @apply border-white border-2 flex justify-center items-center rounded-md p-7 w-3/5 mt-10 ml-20;
+  }
+
+  .addInput{
+    @apply border-white border-2 bg-black text-white text-center flex pt-3 pb-3 mt-56 ml-6 text-2xl;
+    border-color: white !important;
   }
 }
