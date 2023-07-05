@@ -181,4 +181,32 @@ body {
   .join > button {
     @apply border-white border rounded-md py-2 px-4 bg-black;
   }
+
+  .itemPage {
+    @apply flex flex-col justify-center items-center gap-5 w-full;
+  }
+
+  .itemPageValue {
+    @apply w-2/3 flex flex-col justify-center gap-5;
+  }
+
+  .itemTitle {
+    @apply text-2xl font-bold flex justify-center pt-20;
+  }
+
+  .descriptionInput {
+    @apply border-white border rounded bg-transparent p-2 mb-10;
+  }
+
+  .itemSubtitle {
+    @apply font-bold text-2xl;
+  }
+
+  .deleteItem {
+    @apply mt-10 rounded bg-red-600 text-white p-2 font-bold;
+  }
+  
+  .checkbox {
+    @apply w-10;
+  }
 }
